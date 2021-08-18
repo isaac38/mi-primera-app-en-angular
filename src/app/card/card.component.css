@@ -1,0 +1,129 @@
+.card{
+  height: 30em;
+  width: 50em;
+  background: rgb(255, 255, 255);
+  /*backdrop-filter: blur(12px);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*border: solid 1px rgba(54, 54, 54, 0.5);*/
+  border-radius: 30px 30px 30px 30px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content_user{
+  padding: 50px 50px 0px 50px;
+}
+
+.img_user{
+  display: flex;
+  justify-content: center;
+
+}
+img{
+  /*border: 10px solid transparent;*/
+  background: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+  border-radius: 100%;
+  padding: 5px;
+  height: 20%;
+  width: 20%;
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* social media */
+.list{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 50px 50px 50px;
+  /* padding: 50px; */
+}
+
+.contentlink{
+  display: flex;
+  /*justify-content: space-around;*/
+  margin: 16px;
+}
+
+.facebook{
+  background: linear-gradient(#00d4ff, #195eda);
+  border-radius: 50px 50px 50px 50px;
+}
+
+.instagram{
+  background: radial-gradient(circle at top left,#405DE6, #5851DB, #833AB4, #C13584, #E1306C,#FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  border-radius: 50px 50px 50px 50px;
+}
+.email{
+  background: rgb(255, 8, 0);
+  border-radius: 50px 50px 50px 50px;
+}
+.github{
+  background: rgb(49, 49, 49);
+  border-radius: 50px 50px 50px 50px;
+}
+
+fa-icon{
+  color:#ffffff;
+  margin: 0px 0px 0px 0px;
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0px 0px 0px 5px;
+}
+
+
+/*Responsuve desing mediaquery*/
+
+
+
+@media only screen and (max-width: 600px) {
+  .card{
+    height: 40em;
+    width: 20em;
+    background: rgb(255, 255, 255);
+    /*backdrop-filter: blur(12px);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*border: solid 1px rgba(54, 54, 54, 0.5);*/
+    border-radius: 30px 30px 30px 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img{
+    /*border: 10px solid transparent;*/
+    border-radius: 100%;
+    padding: 5px;
+    height: 40%;
+    width: 40%;
+  }
+
+  /* social media */
+  .list{
+    flex-direction: column;
+    /* padding: 50px; */
+  }
+
+  .facebook, .instagram, .email, .github{
+    margin: 10px 0px 10px 0px;
+  }
+
+  a{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0px 0px 0px 5px;
+  }
+
+}
